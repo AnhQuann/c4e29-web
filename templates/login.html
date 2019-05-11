@@ -5,21 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Đăng nhập</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
-  <form action="/login" method="post">
-    <input type="text" placeholder="Tên đăng nhập" name="login_username"> <br> <br>
-    <input type="password" placeholder="Mật khẩu" name="login_password"> <br> <br>
-    <input type="submit" value="Đăng nhập">
-    <input type="reset" value="Reset">
+  <form id="login-form" action="/login" method="post">
+    <img id="avatar" src="../static/images/avatar.jpg" alt="">
+
+    <div class="div-input">
+      <i class="fas fa-user custom-icon"></i>
+      <input class="login-input" type="text" placeholder="Tên đăng nhập" name="login_username">
+    </div>
+
+    <div class="div-input">
+      <i class="fas fa-fingerprint custom-icon"></i>
+      <input class="login-input" type="password" placeholder="Mật khẩu" name="login_password">
+    </div>
+    
+    <div id="div-button">
+      <input class="btn-custom" type="submit" value="Đăng nhập">
+      <input class="btn-custom" type="reset" value="Reset">
+    </div>
   </form>
-  <div>
-    <h1 id="first-h1">TEST THỬ CSS</h1>
-    <h1 id="second-h1">TEST LẠI LẦN 2</h1>
-    <h2 class="text-blue">ĐÂY LÀ THẺ HEADING 2</h2>
-    <h5 class="text-blue">ĐÂY LÀ THẺ HEADING 5</h5>
-    <h6 class="text-blue">ĐÂY LÀ THẺ HEADING 6</h6>
-  </div>
+
 </body>
 </html>
